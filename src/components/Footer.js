@@ -70,7 +70,7 @@ export default function Footer() {
         <div className={`${styles.container} ${styles.footerGrid}`}>
           <div className={styles.brandColumn}>
             <h3>STARDUST COLLECTIONS</h3>
-            <p className={styles.brandSub}>A TANISHQ Partnership</p>
+            <p className={styles.brandSub}>Celestial Aesthetic</p>
             <p className={styles.brandDescription}>
               Stardust Collections is India's leading omni-channel jewellery brand, crafting beautiful, lightweight 
               diamond and gold jewellery designed for everyday wear.
@@ -114,7 +114,7 @@ export default function Footer() {
         <div className={styles.container}>
           <div className={styles.bottomFlex}>
             <p>&copy; {new Date().getFullYear()} Stardust Collections. All rights reserved.</p>
-            <p className={styles.tataCredit}>Partnered with TATA & Tanishq</p>
+            <p className={styles.tataCredit}>Crafted with Love & Stars</p>
           </div>
         </div>
       </div>

@@ -183,12 +183,12 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 5. Tanishq Partnership Assurance Banner */}
+        {/* 5. Stardust Quality Assurance Banner */}
         <section className={styles.assuranceSection}>
           <div className={`${styles.assuranceContent} container`}>
             <div className={styles.assuranceHeader}>
-              <h2>The Tanishq Assurance</h2>
-              <p>Backed by the Trust and Quality standard of TATA Group</p>
+              <h2>The Stardust Assurance</h2>
+              <p>Guaranteed Premium Quality & Craftsmanship Standards</p>
             </div>
             <div className={styles.assuranceGrid}>
               <div className={styles.assuranceCard}>
