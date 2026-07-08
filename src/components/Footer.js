@@ -69,10 +69,10 @@ export default function Footer() {
       <div className={styles.mainFooter}>
         <div className={`${styles.container} ${styles.footerGrid}`}>
           <div className={styles.brandColumn}>
-            <h3>CARATLANE</h3>
+            <h3>STARDUST COLLECTIONS</h3>
             <p className={styles.brandSub}>A TANISHQ Partnership</p>
             <p className={styles.brandDescription}>
-              CaratLane is India's leading omni-channel jewellery brand, crafting beautiful, lightweight 
+              Stardust Collections is India's leading omni-channel jewellery brand, crafting beautiful, lightweight 
               diamond and gold jewellery designed for everyday wear.
             </p>
           </div>
@@ -113,7 +113,7 @@ export default function Footer() {
       <div className={styles.bottomBar}>
         <div className={styles.container}>
           <div className={styles.bottomFlex}>
-            <p>&copy; {new Date().getFullYear()} CaratLane Trading Pvt. Ltd. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Stardust Collections. All rights reserved.</p>
             <p className={styles.tataCredit}>Partnered with TATA & Tanishq</p>
           </div>
         </div>

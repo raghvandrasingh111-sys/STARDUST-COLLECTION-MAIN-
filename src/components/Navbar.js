@@ -85,7 +85,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       {/* CaratLane Announcement Strip */}
       <div className={styles.announcementStrip}>
-        <span>CARATLANE - A TANISHQ PARTNERSHIP</span>
+        <span>STARDUST COLLECTIONS - A TANISHQ PARTNERSHIP</span>
         <div className={styles.stripLinks}>
           <Link href="/catalog">Find a Store</Link>
           <span className={styles.separator}>|</span>
@@ -105,7 +105,7 @@ export default function Navbar() {
             </svg>
           </div>
           <div className={styles.logoTextWrapper}>
-            <span className={styles.logoMain}>CARATLANE</span>
+            <span className={styles.logoMain}>STARDUST COLLECTIONS</span>
             <span className={styles.logoSub}>A TANISHQ Partnership</span>
           </div>
         </Link>
