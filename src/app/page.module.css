@@ -1,0 +1,293 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 140px; /* space for fixed navbar + subnav header */
+}
+
+/* 1. Hero Section wrapper */
+.heroSection {
+  width: 100%;
+}
+
+/* 2. Category Section */
+.categorySection {
+  padding: 4rem 0 2rem 0;
+}
+
+.categoryHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.categoryHeader h2 {
+  font-family: var(--font-family-serif);
+  font-size: 2.2rem;
+  color: var(--ghost-white);
+}
+
+.categoryHeader p {
+  font-family: var(--font-family-sans);
+  font-size: 0.95rem;
+  color: var(--muted-text);
+}
+
+.categoryCircleGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.categoryCircleItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  width: 110px;
+}
+
+.circleImageWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #eadff5;
+  overflow: hidden;
+  background: #FAF8FC;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.circleImage {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.categoryCircleItem:hover .circleImageWrapper {
+  border-color: var(--velvet-purple);
+  box-shadow: 0 8px 20px rgba(79, 50, 107, 0.1);
+  transform: translateY(-2px);
+}
+
+.categoryCircleItem:hover .circleImage {
+  transform: scale(1.06);
+}
+
+.circleName {
+  font-family: var(--font-family-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ghost-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+/* 3. Budget & Grid Sections */
+.budgetSection {
+  padding: 4rem 0;
+}
+
+.sectionTitleWrapper {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sectionSubtitle {
+  font-family: var(--font-family-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--shimmer-pink);
+}
+
+.sectionTitle {
+  font-family: var(--font-family-serif);
+  font-size: 2.4rem;
+  color: var(--ghost-white);
+}
+
+/* 4. Try At Home Promo Banner */
+.tryAtHomeBanner {
+  background: #ffffff;
+  border: 1px solid #eadff5;
+  border-radius: 16px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(79, 50, 107, 0.03);
+  margin: 3rem 0 5rem 0;
+}
+
+.tryContent {
+  flex: 1.2;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.tryTag {
+  font-family: var(--font-family-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--shimmer-pink);
+}
+
+.tryTitle {
+  font-family: var(--font-family-serif);
+  font-size: 2.3rem;
+  color: var(--ghost-white);
+  line-height: 1.2;
+}
+
+.tryDescription {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tryBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-family-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ghost-white);
+}
+
+.benefitItem svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.tryImageWrapper {
+  flex: 0.8;
+  position: relative;
+  min-height: 350px;
+}
+
+/* 5. Assurance Section */
+.assuranceSection {
+  background: var(--velvet-purple-light);
+  padding: 5rem 0;
+  border-top: 1px solid #eadff5;
+  margin-top: 2rem;
+}
+
+.assuranceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.assuranceHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.assuranceHeader h2 {
+  font-family: var(--font-family-serif);
+  font-size: 2.2rem;
+  color: var(--velvet-purple);
+}
+
+.assuranceHeader p {
+  font-family: var(--font-family-sans);
+  font-size: 0.95rem;
+  color: var(--muted-text);
+}
+
+.assuranceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.assuranceCard {
+  background: #ffffff;
+  padding: 2.2rem;
+  border-radius: 12px;
+  border: 1px solid #eadff5;
+  box-shadow: 0 4px 15px rgba(79, 50, 107, 0.02);
+  transition: transform 0.3s ease;
+}
+
+.assuranceCard:hover {
+  transform: translateY(-3px);
+}
+
+.assuranceCard h4 {
+  font-family: var(--font-family-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--velvet-purple);
+  margin-bottom: 0.6rem;
+}
+
+.assuranceCard p {
+  color: var(--muted-text);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .tryAtHomeBanner {
+    flex-direction: column;
+  }
+  .tryContent {
+    padding: 3rem 2rem;
+  }
+  .tryImageWrapper {
+    height: 300px;
+    width: 100%;
+  }
+  .assuranceGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 80px; /* smaller navbar spacer on mobile */
+  }
+  .categoryCircleGrid {
+    gap: 1.5rem;
+  }
+  .categoryCircleItem {
+    width: 80px;
+  }
+  .circleImageWrapper {
+    width: 75px;
+    height: 75px;
+  }
+  .tryTitle, .categoryHeader h2, .sectionTitle, .assuranceHeader h2 {
+    font-size: 1.8rem;
+  }
+}
+

@@ -1,0 +1,158 @@
+.main {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-family: var(--font-family-serif);
+}
+
+.controls {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 0.5rem;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: var(--muted-text);
+  font-family: var(--font-family-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeTab, .tab:hover {
+  color: var(--star-gold);
+}
+
+.activeTab {
+  border-bottom: 2px solid var(--star-gold);
+}
+
+/* Table styling */
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+}
+
+.table th {
+  color: var(--star-gold);
+  font-family: var(--font-family-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.table td {
+  color: var(--ghost-white);
+}
+
+.productRow:hover, .orderRow:hover {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.thumbnailWrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: #110f1e;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.actionBtn {
+  background: transparent;
+  border: none;
+  color: var(--muted-text);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.actionBtn:hover {
+  color: var(--star-gold);
+}
+
+.deleteBtn:hover {
+  color: #ff7676;
+}
+
+.statusBadge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.statusPending {
+  background: rgba(223, 178, 87, 0.15);
+  color: var(--star-gold);
+}
+
+.statusShipped {
+  background: rgba(126, 242, 157, 0.15);
+  color: #7ef29d;
+}
+
+.unauthorized {
+  text-align: center;
+  padding: 6rem 0;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.unauthorized h2 {
+  font-size: 2.2rem;
+  color: #ff7676;
+}

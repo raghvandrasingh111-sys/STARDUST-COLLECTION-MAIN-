@@ -1,0 +1,207 @@
+.card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eadff5;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(79, 50, 107, 0.02);
+}
+
+.card:hover {
+  border-color: #c8b7db;
+  box-shadow: 0 8px 24px rgba(79, 50, 107, 0.08);
+  transform: translateY(-4px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #FAF8FC;
+  cursor: pointer;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.04);
+}
+
+.tagsContainer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 10;
+}
+
+.tag {
+  background: var(--velvet-purple);
+  color: #ffffff;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.trending {
+  background: var(--shimmer-pink);
+}
+
+.deliveryTag {
+  background: rgba(244, 164, 44, 0.1);
+  border: 1px solid rgba(244, 164, 44, 0.2);
+  color: #ab6d0e;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.wishlistBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #8c78a0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(79, 50, 107, 0.1);
+  transition: all 0.2s ease;
+}
+
+.wishlistBtn:hover {
+  color: var(--shimmer-pink);
+  transform: scale(1.1);
+}
+
+.activeWishlist {
+  color: var(--shimmer-pink);
+}
+
+.details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.4rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.price {
+  font-family: var(--font-family-sans);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--velvet-purple);
+}
+
+.originalPrice {
+  font-family: var(--font-family-sans);
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: var(--muted-text);
+}
+
+.discount {
+  font-family: var(--font-family-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--shimmer-pink);
+}
+
+.title {
+  font-family: var(--font-family-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ghost-white);
+  line-height: 1.3;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title:hover {
+  color: var(--velvet-purple);
+}
+
+.specs {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  margin-bottom: 0.5rem;
+}
+
+.cardActions {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+.tryBtn {
+  background: transparent;
+  color: var(--velvet-purple);
+  border: 1px solid var(--velvet-purple);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem 0.2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.tryBtn:hover {
+  background: var(--velvet-purple-light);
+}
+
+.addBtn {
+  background: var(--velvet-purple);
+  color: #ffffff;
+  border: 1px solid var(--velvet-purple);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem 0.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.addBtn:hover {
+  background: var(--velvet-purple-hover);
+  border-color: var(--velvet-purple-hover);
+}
+

@@ -1,0 +1,179 @@
+.footer {
+  background: #fbf9fc;
+  border-top: 1px solid #eadff5;
+  padding: 0;
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* 1. Trust Bar */
+.trustBar {
+  background: #ffffff;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid #eadff5;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.trustItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.trustIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--velvet-purple-light);
+  color: var(--velvet-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trustIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.trustText h4 {
+  font-family: var(--font-family-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ghost-white);
+  margin-bottom: 0.2rem;
+}
+
+.trustText p {
+  font-size: 0.78rem;
+  color: var(--muted-text);
+  line-height: 1.4;
+}
+
+/* 2. Main Footer Content */
+.mainFooter {
+  padding: 4rem 0 3.5rem 0;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.brandColumn h3 {
+  font-family: var(--font-family-sans);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: var(--velvet-purple);
+  line-height: 1;
+}
+
+.brandSub {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  margin-bottom: 0.8rem;
+}
+
+.brandDescription {
+  color: var(--muted-text);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.column h4 {
+  font-family: var(--font-family-sans);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--velvet-purple);
+  margin-bottom: 1.2rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.links a {
+  color: var(--muted-text);
+  font-size: 0.88rem;
+  transition: all 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--velvet-purple);
+  padding-left: 4px;
+}
+
+/* 3. Bottom Bar */
+.bottomBar {
+  background: var(--velvet-purple);
+  color: #ffffff;
+  padding: 1.2rem 0;
+  font-size: 0.78rem;
+}
+
+.bottomFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomFlex p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tataCredit {
+  font-family: var(--font-family-sans);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .trustGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footerGrid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .trustGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .bottomFlex {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+}
+

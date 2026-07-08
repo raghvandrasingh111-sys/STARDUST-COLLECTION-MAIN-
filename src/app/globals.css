@@ -1,0 +1,183 @@
+:root {
+  /* CaratLane Color Palette */
+  --space-black: #ffffff;
+  --cosmic-nebula: #ffffff;
+  --velvet-purple: #4f326b; /* CaratLane Plum/Deep Purple */
+  --velvet-purple-light: #f5effb; /* Very light purple/pink background */
+  --velvet-purple-hover: #3d2454;
+  --star-gold: #f4a42c; /* Gold/Orange */
+  --star-gold-glow: rgba(244, 164, 44, 0.25);
+  --shimmer-pink: #de3f7c; /* Brand pink */
+  --ghost-white: #231535; /* Deep purple-black for text */
+  --muted-text: #6f5d80; /* Soft purple-grey for description text */
+  --glass-bg: rgba(255, 255, 255, 0.96);
+  --glass-border: rgba(79, 50, 107, 0.08);
+  --glass-glow: rgba(79, 50, 107, 0.03);
+  --shadow-color: rgba(79, 50, 107, 0.06);
+  --accent-green: #2fa859; /* Tag green */
+
+  /* Fonts */
+  --font-family-sans: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-serif: var(--font-serif), Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Reset and Globals */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: var(--ghost-white);
+  font-family: var(--font-family-sans);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf9fc;
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(79, 50, 107, 0.02) 0%, transparent 35%),
+    radial-gradient(circle at 90% 85%, rgba(222, 63, 124, 0.02) 0%, transparent 45%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5effb;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8cde3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--velvet-purple);
+}
+
+/* Common Typography & Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+  color: var(--ghost-white);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glassmorphism utility updated for light theme */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(79, 50, 107, 0.05);
+}
+
+.glass-hover:hover {
+  border-color: rgba(79, 50, 107, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(79, 50, 107, 0.08);
+}
+
+/* Glittering details - adapted for light background */
+.star-glow {
+  text-shadow: 0 0 8px rgba(244, 164, 44, 0.15);
+}
+
+/* Common Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--velvet-purple);
+  color: #ffffff !important;
+  padding: 0.75rem 2.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--velvet-purple);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px rgba(79, 50, 107, 0.15);
+}
+
+.btn-primary:hover {
+  background: var(--velvet-purple-hover);
+  border-color: var(--velvet-purple-hover);
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 18px rgba(79, 50, 107, 0.22);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: var(--velvet-purple) !important;
+  padding: 0.75rem 2.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--velvet-purple);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover {
+  background: var(--velvet-purple-light);
+  transform: translateY(-1.5px);
+}
+
+/* Keyframes */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, var(--ghost-white) 0%, var(--shimmer-pink) 50%, var(--ghost-white) 100%);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 5s linear infinite;
+}
+
+/* Common Layout Utilities */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
